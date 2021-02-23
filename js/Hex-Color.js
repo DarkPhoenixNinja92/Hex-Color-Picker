@@ -9,7 +9,7 @@ function changeColor() {
         hexNum += colorCodes[Math.floor(Math.random() * colorCodes.length)];
     }
     document.getElementById("backColor").style.backgroundColor = hexNum;
-    document.getElementById("hex-code").innerHTML += hexNum;
+    document.getElementById("hex-code").innerHTML += hexNum.toUpperCase();
     document.getElementById("hex-code").style.opacity = 100;
     hexNum = "#";
     hexReset;
